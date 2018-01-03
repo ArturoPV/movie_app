@@ -1,0 +1,19 @@
+<%= form_for @movie do |movie| %>
+  <%= movie.label 'Title', :title %>
+  <br>
+  <%= movie.text_field :title %>
+  <br>
+  <%= movie.label 'Summary', :summary %>
+  <br>
+  <%= movie.text_area :summary %>
+  <br>
+  <%= movie.label 'Release Date', :date %>
+  <br>
+  <%= movie.date_field :date %>
+  <br>
+  <p>Add the movie poster (URL)</p>
+  <br>
+  <%=movie.text_field :poster %>
+  <br>
+  <%= movie.submit %>
+<% end %>
